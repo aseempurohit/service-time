@@ -40,7 +40,7 @@
       },
       {  
          "type":"shell",
-         "execute_command":"echo '{{user `ubuntu`}}' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
+         "execute_command":"echo '{{user `cirros`}}' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
          "inline":[  
             "sleep 30",
             "export http_proxy=http://165.225.106.34:80",
@@ -62,7 +62,7 @@
       },
       {  
          "type":"shell",
-         "execute_command":"echo '{{user `ubuntu`}}' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
+         "execute_command":"echo '{{user `cirros`}}' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
          "inline":[  
             "cp /tmp/hello.sh /opt/dtedge/hello/hello.sh",
             "cp /tmp/requirements.txt /opt/dtedge/hello/requirements.txt",
